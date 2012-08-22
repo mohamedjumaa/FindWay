@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE5E4C2715E4D0E80006353B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C2615E4D0E80006353B /* UIKit.framework */; };
+		CE5E4C2915E4D0E80006353B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C2815E4D0E80006353B /* Foundation.framework */; };
+		CE5E4C2B15E4D0E80006353B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C2A15E4D0E80006353B /* CoreGraphics.framework */; };
+		CE5E4C3115E4D0E80006353B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C2F15E4D0E80006353B /* InfoPlist.strings */; };
+		CE5E4C3315E4D0E80006353B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C3215E4D0E80006353B /* main.m */; };
+		CE5E4C3715E4D0E80006353B /* FindWayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */; };
+		CE5E4C3A15E4D0E80006353B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */; };
+		CE5E4C3D15E4D0E80006353B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */; };
+		CE5E4C4015E4D0E80006353B /* FindWayFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */; };
+		CE5E4C4215E4D0E80006353B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4115E4D0E80006353B /* first.png */; };
+		CE5E4C4415E4D0E80006353B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4315E4D0E80006353B /* first@2x.png */; };
+		CE5E4C4715E4D0E80006353B /* FindWaySecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C4615E4D0E80006353B /* FindWaySecondViewController.m */; };
+		CE5E4C4915E4D0E80006353B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4815E4D0E80006353B /* second.png */; };
+		CE5E4C4B15E4D0E80006353B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4A15E4D0E80006353B /* second@2x.png */; };
+		CE5E4C5315E4D0E90006353B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C5215E4D0E90006353B /* SenTestingKit.framework */; };
+		CE5E4C5415E4D0E90006353B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C2615E4D0E80006353B /* UIKit.framework */; };
+		CE5E4C5515E4D0E90006353B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C2815E4D0E80006353B /* Foundation.framework */; };
+		CE5E4C5D15E4D0E90006353B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C5B15E4D0E90006353B /* InfoPlist.strings */; };
+		CE5E4C6015E4D0E90006353B /* FindWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C5F15E4D0E90006353B /* FindWayTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE5E4C5615E4D0E90006353B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5E4C1915E4D0E80006353B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5E4C2115E4D0E80006353B;
+			remoteInfo = FindWay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE5E4C2215E4D0E80006353B /* FindWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5E4C2615E4D0E80006353B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE5E4C2815E4D0E80006353B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE5E4C2A15E4D0E80006353B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE5E4C2E15E4D0E80006353B /* FindWay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FindWay-Info.plist"; sourceTree = "<group>"; };
+		CE5E4C3015E4D0E80006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE5E4C3215E4D0E80006353B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE5E4C3415E4D0E80006353B /* FindWay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindWay-Prefix.pch"; sourceTree = "<group>"; };
+		CE5E4C3515E4D0E80006353B /* FindWayAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWayAppDelegate.h; sourceTree = "<group>"; };
+		CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayAppDelegate.m; sourceTree = "<group>"; };
+		CE5E4C3915E4D0E80006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CE5E4C3C15E4D0E80006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CE5E4C3E15E4D0E80006353B /* FindWayFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWayFirstViewController.h; sourceTree = "<group>"; };
+		CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayFirstViewController.m; sourceTree = "<group>"; };
+		CE5E4C4115E4D0E80006353B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		CE5E4C4315E4D0E80006353B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		CE5E4C4515E4D0E80006353B /* FindWaySecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWaySecondViewController.h; sourceTree = "<group>"; };
+		CE5E4C4615E4D0E80006353B /* FindWaySecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWaySecondViewController.m; sourceTree = "<group>"; };
+		CE5E4C4815E4D0E80006353B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		CE5E4C4A15E4D0E80006353B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		CE5E4C5115E4D0E90006353B /* FindWayTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWayTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5E4C5215E4D0E90006353B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE5E4C5A15E4D0E90006353B /* FindWayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FindWayTests-Info.plist"; sourceTree = "<group>"; };
+		CE5E4C5C15E4D0E90006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE5E4C5E15E4D0E90006353B /* FindWayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWayTests.h; sourceTree = "<group>"; };
+		CE5E4C5F15E4D0E90006353B /* FindWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE5E4C1F15E4D0E80006353B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5E4C2715E4D0E80006353B /* UIKit.framework in Frameworks */,
+				CE5E4C2915E4D0E80006353B /* Foundation.framework in Frameworks */,
+				CE5E4C2B15E4D0E80006353B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5E4C4D15E4D0E90006353B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5E4C5315E4D0E90006353B /* SenTestingKit.framework in Frameworks */,
+				CE5E4C5415E4D0E90006353B /* UIKit.framework in Frameworks */,
+				CE5E4C5515E4D0E90006353B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE5E4C1715E4D0E80006353B = {
+			isa = PBXGroup;
+			children = (
+				CE5E4C2C15E4D0E80006353B /* FindWay */,
+				CE5E4C5815E4D0E90006353B /* FindWayTests */,
+				CE5E4C2515E4D0E80006353B /* Frameworks */,
+				CE5E4C2315E4D0E80006353B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE5E4C2315E4D0E80006353B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E4C2215E4D0E80006353B /* FindWay.app */,
+				CE5E4C5115E4D0E90006353B /* FindWayTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE5E4C2515E4D0E80006353B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E4C2615E4D0E80006353B /* UIKit.framework */,
+				CE5E4C2815E4D0E80006353B /* Foundation.framework */,
+				CE5E4C2A15E4D0E80006353B /* CoreGraphics.framework */,
+				CE5E4C5215E4D0E90006353B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE5E4C2C15E4D0E80006353B /* FindWay */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E4C3515E4D0E80006353B /* FindWayAppDelegate.h */,
+				CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */,
+				CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */,
+				CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */,
+				CE5E4C3E15E4D0E80006353B /* FindWayFirstViewController.h */,
+				CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */,
+				CE5E4C4115E4D0E80006353B /* first.png */,
+				CE5E4C4315E4D0E80006353B /* first@2x.png */,
+				CE5E4C4515E4D0E80006353B /* FindWaySecondViewController.h */,
+				CE5E4C4615E4D0E80006353B /* FindWaySecondViewController.m */,
+				CE5E4C4815E4D0E80006353B /* second.png */,
+				CE5E4C4A15E4D0E80006353B /* second@2x.png */,
+				CE5E4C2D15E4D0E80006353B /* Supporting Files */,
+			);
+			path = FindWay;
+			sourceTree = "<group>";
+		};
+		CE5E4C2D15E4D0E80006353B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E4C2E15E4D0E80006353B /* FindWay-Info.plist */,
+				CE5E4C2F15E4D0E80006353B /* InfoPlist.strings */,
+				CE5E4C3215E4D0E80006353B /* main.m */,
+				CE5E4C3415E4D0E80006353B /* FindWay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE5E4C5815E4D0E90006353B /* FindWayTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E4C5E15E4D0E90006353B /* FindWayTests.h */,
+				CE5E4C5F15E4D0E90006353B /* FindWayTests.m */,
+				CE5E4C5915E4D0E90006353B /* Supporting Files */,
+			);
+			path = FindWayTests;
+			sourceTree = "<group>";
+		};
+		CE5E4C5915E4D0E90006353B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E4C5A15E4D0E90006353B /* FindWayTests-Info.plist */,
+				CE5E4C5B15E4D0E90006353B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE5E4C2115E4D0E80006353B /* FindWay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5E4C6315E4D0E90006353B /* Build configuration list for PBXNativeTarget "FindWay" */;
+			buildPhases = (
+				CE5E4C1E15E4D0E80006353B /* Sources */,
+				CE5E4C1F15E4D0E80006353B /* Frameworks */,
+				CE5E4C2015E4D0E80006353B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindWay;
+			productName = FindWay;
+			productReference = CE5E4C2215E4D0E80006353B /* FindWay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE5E4C5015E4D0E90006353B /* FindWayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5E4C6615E4D0E90006353B /* Build configuration list for PBXNativeTarget "FindWayTests" */;
+			buildPhases = (
+				CE5E4C4C15E4D0E90006353B /* Sources */,
+				CE5E4C4D15E4D0E90006353B /* Frameworks */,
+				CE5E4C4E15E4D0E90006353B /* Resources */,
+				CE5E4C4F15E4D0E90006353B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5E4C5715E4D0E90006353B /* PBXTargetDependency */,
+			);
+			name = FindWayTests;
+			productName = FindWayTests;
+			productReference = CE5E4C5115E4D0E90006353B /* FindWayTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE5E4C1915E4D0E80006353B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FindWay;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Lion User";
+			};
+			buildConfigurationList = CE5E4C1C15E4D0E80006353B /* Build configuration list for PBXProject "FindWay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE5E4C1715E4D0E80006353B;
+			productRefGroup = CE5E4C2315E4D0E80006353B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE5E4C2115E4D0E80006353B /* FindWay */,
+				CE5E4C5015E4D0E90006353B /* FindWayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5E4C2015E4D0E80006353B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5E4C3115E4D0E80006353B /* InfoPlist.strings in Resources */,
+				CE5E4C3A15E4D0E80006353B /* MainStoryboard_iPhone.storyboard in Resources */,
+				CE5E4C3D15E4D0E80006353B /* MainStoryboard_iPad.storyboard in Resources */,
+				CE5E4C4215E4D0E80006353B /* first.png in Resources */,
+				CE5E4C4415E4D0E80006353B /* first@2x.png in Resources */,
+				CE5E4C4915E4D0E80006353B /* second.png in Resources */,
+				CE5E4C4B15E4D0E80006353B /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5E4C4E15E4D0E90006353B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5E4C5D15E4D0E90006353B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE5E4C4F15E4D0E90006353B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE5E4C1E15E4D0E80006353B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5E4C3315E4D0E80006353B /* main.m in Sources */,
+				CE5E4C3715E4D0E80006353B /* FindWayAppDelegate.m in Sources */,
+				CE5E4C4015E4D0E80006353B /* FindWayFirstViewController.m in Sources */,
+				CE5E4C4715E4D0E80006353B /* FindWaySecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5E4C4C15E4D0E90006353B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5E4C6015E4D0E90006353B /* FindWayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE5E4C5715E4D0E90006353B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5E4C2115E4D0E80006353B /* FindWay */;
+			targetProxy = CE5E4C5615E4D0E90006353B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE5E4C2F15E4D0E80006353B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5E4C3015E4D0E80006353B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5E4C3915E4D0E80006353B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5E4C3C15E4D0E80006353B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CE5E4C5B15E4D0E90006353B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5E4C5C15E4D0E90006353B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE5E4C6115E4D0E90006353B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE5E4C6215E4D0E90006353B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5E4C6415E4D0E90006353B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindWay/FindWay-Prefix.pch";
+				INFOPLIST_FILE = "FindWay/FindWay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE5E4C6515E4D0E90006353B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindWay/FindWay-Prefix.pch";
+				INFOPLIST_FILE = "FindWay/FindWay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE5E4C6715E4D0E90006353B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FindWay.app/FindWay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindWay/FindWay-Prefix.pch";
+				INFOPLIST_FILE = "FindWayTests/FindWayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE5E4C6815E4D0E90006353B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FindWay.app/FindWay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindWay/FindWay-Prefix.pch";
+				INFOPLIST_FILE = "FindWayTests/FindWayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE5E4C1C15E4D0E80006353B /* Build configuration list for PBXProject "FindWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5E4C6115E4D0E90006353B /* Debug */,
+				CE5E4C6215E4D0E90006353B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5E4C6315E4D0E90006353B /* Build configuration list for PBXNativeTarget "FindWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5E4C6415E4D0E90006353B /* Debug */,
+				CE5E4C6515E4D0E90006353B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE5E4C6615E4D0E90006353B /* Build configuration list for PBXNativeTarget "FindWayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5E4C6715E4D0E90006353B /* Debug */,
+				CE5E4C6815E4D0E90006353B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE5E4C1915E4D0E80006353B /* Project object */;
+}
