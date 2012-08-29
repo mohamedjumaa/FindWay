@@ -26,6 +26,8 @@
 		CE5E4C5515E4D0E90006353B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C2815E4D0E80006353B /* Foundation.framework */; };
 		CE5E4C5D15E4D0E90006353B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C5B15E4D0E90006353B /* InfoPlist.strings */; };
 		CE5E4C6015E4D0E90006353B /* FindWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C5F15E4D0E90006353B /* FindWayTests.m */; };
+		CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C4DA715EDBF580067A420 /* MessageTab.m */; };
+		CECDF91D15ECFC0000DEF733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDF91C15ECFC0000DEF733 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		CE5E4C5C15E4D0E90006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE5E4C5E15E4D0E90006353B /* FindWayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWayTests.h; sourceTree = "<group>"; };
 		CE5E4C5F15E4D0E90006353B /* FindWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayTests.m; sourceTree = "<group>"; };
+		CE8C4DA615EDBF580067A420 /* MessageTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTab.h; sourceTree = "<group>"; };
+		CE8C4DA715EDBF580067A420 /* MessageTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTab.m; sourceTree = "<group>"; };
+		CECDF91C15ECFC0000DEF733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECDF91D15ECFC0000DEF733 /* MapKit.framework in Frameworks */,
 				CE5E4C2715E4D0E80006353B /* UIKit.framework in Frameworks */,
 				CE5E4C2915E4D0E80006353B /* Foundation.framework in Frameworks */,
 				CE5E4C2B15E4D0E80006353B /* CoreGraphics.framework in Frameworks */,
@@ -113,6 +119,7 @@
 		CE5E4C2515E4D0E80006353B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CECDF91C15ECFC0000DEF733 /* MapKit.framework */,
 				CE5E4C2615E4D0E80006353B /* UIKit.framework */,
 				CE5E4C2815E4D0E80006353B /* Foundation.framework */,
 				CE5E4C2A15E4D0E80006353B /* CoreGraphics.framework */,
@@ -127,6 +134,8 @@
 				CE5E4C3515E4D0E80006353B /* FindWayAppDelegate.h */,
 				CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */,
 				CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */,
+				CE8C4DA615EDBF580067A420 /* MessageTab.h */,
+				CE8C4DA715EDBF580067A420 /* MessageTab.m */,
 				CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */,
 				CE5E4C3E15E4D0E80006353B /* FindWayFirstViewController.h */,
 				CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */,
@@ -288,6 +297,7 @@
 				CE5E4C3715E4D0E80006353B /* FindWayAppDelegate.m in Sources */,
 				CE5E4C4015E4D0E80006353B /* FindWayFirstViewController.m in Sources */,
 				CE5E4C4715E4D0E80006353B /* FindWaySecondViewController.m in Sources */,
+				CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +481,7 @@
 				CE5E4C6515E4D0E90006353B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE5E4C6615E4D0E90006353B /* Build configuration list for PBXNativeTarget "FindWayTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +490,7 @@
 				CE5E4C6815E4D0E90006353B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
