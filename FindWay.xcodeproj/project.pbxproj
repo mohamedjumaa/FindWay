@@ -27,6 +27,9 @@
 		CE5E4C5D15E4D0E90006353B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C5B15E4D0E90006353B /* InfoPlist.strings */; };
 		CE5E4C6015E4D0E90006353B /* FindWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C5F15E4D0E90006353B /* FindWayTests.m */; };
 		CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C4DA715EDBF580067A420 /* MessageTab.m */; };
+		CE8C505D15EF8E000067A420 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8C505C15EF8E000067A420 /* FacebookSDK.framework */; };
+		CE8C506015EF8E9E0067A420 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE8C505F15EF8E9E0067A420 /* FacebookSDKResources.bundle */; };
+		CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C506215EF914B0067A420 /* FindWayMainViewController.m */; };
 		CECDF91D15ECFC0000DEF733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDF91C15ECFC0000DEF733 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,10 @@
 		CE5E4C5F15E4D0E90006353B /* FindWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayTests.m; sourceTree = "<group>"; };
 		CE8C4DA615EDBF580067A420 /* MessageTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTab.h; sourceTree = "<group>"; };
 		CE8C4DA715EDBF580067A420 /* MessageTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTab.m; sourceTree = "<group>"; };
+		CE8C505C15EF8E000067A420 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		CE8C505F15EF8E9E0067A420 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		CE8C506115EF914B0067A420 /* FindWayMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayMainViewController.h; sourceTree = "<group>"; };
+		CE8C506215EF914B0067A420 /* FindWayMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMainViewController.m; sourceTree = "<group>"; };
 		CECDF91C15ECFC0000DEF733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -81,6 +88,7 @@
 				CE5E4C2715E4D0E80006353B /* UIKit.framework in Frameworks */,
 				CE5E4C2915E4D0E80006353B /* Foundation.framework in Frameworks */,
 				CE5E4C2B15E4D0E80006353B /* CoreGraphics.framework in Frameworks */,
+				CE8C505D15EF8E000067A420 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +127,8 @@
 		CE5E4C2515E4D0E80006353B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE8C505F15EF8E9E0067A420 /* FacebookSDKResources.bundle */,
+				CE8C505C15EF8E000067A420 /* FacebookSDK.framework */,
 				CECDF91C15ECFC0000DEF733 /* MapKit.framework */,
 				CE5E4C2615E4D0E80006353B /* UIKit.framework */,
 				CE5E4C2815E4D0E80006353B /* Foundation.framework */,
@@ -134,6 +144,8 @@
 				CE5E4C3515E4D0E80006353B /* FindWayAppDelegate.h */,
 				CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */,
 				CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */,
+				CE8C506115EF914B0067A420 /* FindWayMainViewController.h */,
+				CE8C506215EF914B0067A420 /* FindWayMainViewController.m */,
 				CE8C4DA615EDBF580067A420 /* MessageTab.h */,
 				CE8C4DA715EDBF580067A420 /* MessageTab.m */,
 				CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */,
@@ -259,6 +271,7 @@
 				CE5E4C4415E4D0E80006353B /* first@2x.png in Resources */,
 				CE5E4C4915E4D0E80006353B /* second.png in Resources */,
 				CE5E4C4B15E4D0E80006353B /* second@2x.png in Resources */,
+				CE8C506015EF8E9E0067A420 /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +311,7 @@
 				CE5E4C4015E4D0E80006353B /* FindWayFirstViewController.m in Sources */,
 				CE5E4C4715E4D0E80006353B /* FindWaySecondViewController.m in Sources */,
 				CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */,
+				CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,9 +423,14 @@
 		CE5E4C6415E4D0E90006353B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FindWay/FindWay-Prefix.pch";
 				INFOPLIST_FILE = "FindWay/FindWay-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,9 +439,14 @@
 		CE5E4C6515E4D0E90006353B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FindWay/FindWay-Prefix.pch";
 				INFOPLIST_FILE = "FindWay/FindWay-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
