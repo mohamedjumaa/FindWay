@@ -30,6 +30,8 @@
 		CE8C505D15EF8E000067A420 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8C505C15EF8E000067A420 /* FacebookSDK.framework */; };
 		CE8C506015EF8E9E0067A420 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE8C505F15EF8E9E0067A420 /* FacebookSDKResources.bundle */; };
 		CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C506215EF914B0067A420 /* FindWayMainViewController.m */; };
+		CEC0250F15F8B7D100A0F239 /* FriendListTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */; };
+		CEC0251A15F8C45600A0F239 /* FriendListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0251915F8C45500A0F239 /* FriendListTableViewController.m */; };
 		CECDF91D15ECFC0000DEF733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDF91C15ECFC0000DEF733 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,10 @@
 		CE8C505F15EF8E9E0067A420 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		CE8C506115EF914B0067A420 /* FindWayMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayMainViewController.h; sourceTree = "<group>"; };
 		CE8C506215EF914B0067A420 /* FindWayMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMainViewController.m; sourceTree = "<group>"; };
+		CEC0250D15F8B7D100A0F239 /* FriendListTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTabBarController.h; sourceTree = "<group>"; };
+		CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTabBarController.m; sourceTree = "<group>"; };
+		CEC0251815F8C45500A0F239 /* FriendListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTableViewController.h; sourceTree = "<group>"; };
+		CEC0251915F8C45500A0F239 /* FriendListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTableViewController.m; sourceTree = "<group>"; };
 		CECDF91C15ECFC0000DEF733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -143,18 +149,22 @@
 			children = (
 				CE5E4C3515E4D0E80006353B /* FindWayAppDelegate.h */,
 				CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */,
-				CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */,
-				CE8C506115EF914B0067A420 /* FindWayMainViewController.h */,
-				CE8C506215EF914B0067A420 /* FindWayMainViewController.m */,
-				CE8C4DA615EDBF580067A420 /* MessageTab.h */,
-				CE8C4DA715EDBF580067A420 /* MessageTab.m */,
-				CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */,
 				CE5E4C3E15E4D0E80006353B /* FindWayFirstViewController.h */,
 				CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */,
-				CE5E4C4115E4D0E80006353B /* first.png */,
-				CE5E4C4315E4D0E80006353B /* first@2x.png */,
+				CE8C506115EF914B0067A420 /* FindWayMainViewController.h */,
+				CE8C506215EF914B0067A420 /* FindWayMainViewController.m */,
 				CE5E4C4515E4D0E80006353B /* FindWaySecondViewController.h */,
 				CE5E4C4615E4D0E80006353B /* FindWaySecondViewController.m */,
+				CE5E4C4115E4D0E80006353B /* first.png */,
+				CE5E4C4315E4D0E80006353B /* first@2x.png */,
+				CEC0250D15F8B7D100A0F239 /* FriendListTabBarController.h */,
+				CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */,
+				CEC0251815F8C45500A0F239 /* FriendListTableViewController.h */,
+				CEC0251915F8C45500A0F239 /* FriendListTableViewController.m */,
+				CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */,
+				CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */,
+				CE8C4DA615EDBF580067A420 /* MessageTab.h */,
+				CE8C4DA715EDBF580067A420 /* MessageTab.m */,
 				CE5E4C4815E4D0E80006353B /* second.png */,
 				CE5E4C4A15E4D0E80006353B /* second@2x.png */,
 				CE5E4C2D15E4D0E80006353B /* Supporting Files */,
@@ -312,6 +322,8 @@
 				CE5E4C4715E4D0E80006353B /* FindWaySecondViewController.m in Sources */,
 				CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */,
 				CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */,
+				CEC0250F15F8B7D100A0F239 /* FriendListTabBarController.m in Sources */,
+				CEC0251A15F8C45600A0F239 /* FriendListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
