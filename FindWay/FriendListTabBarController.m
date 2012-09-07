@@ -8,6 +8,7 @@
 
 #import "FriendListTabBarController.h"
 #import "FriendListTableViewController.h"
+#import "FindWayInvitationViewController.h"
 
 @interface FriendListTabBarController ()
 
@@ -48,8 +49,18 @@
     {
         FriendListTableViewController *instance = [[FriendListTableViewController alloc] init];
         [self.view addSubview:instance.view];
-        [self.view bringSubviewToFront:tabBar];
+        
     }
+    if( [item.title isEqualToString:@"Friend"])
+    {
+        FindWayInvitationViewController *instance = [[FindWayInvitationViewController alloc] init];
+        [self.view addSubview:instance.view];
+        
+    }
+    
+    
+    
+    [self.view bringSubviewToFront:tabBar];
 }
 
 

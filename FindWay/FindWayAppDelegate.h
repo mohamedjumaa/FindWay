@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FindWayMainViewController.h"
 
 @interface FindWayAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) FindWayMainViewController *mainviewController;
+- (void)openSession;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "FindWayMainViewController.h"
+#import "FindWayAppDelegate.h"
+#import "FindWayFirstViewController.h"
 
 @interface FindWayMainViewController () <FBLoginViewDelegate>
 
@@ -37,6 +39,8 @@
     [self.view addSubview:loginview];
     
     [loginview sizeToFit];
+    
+    
 
 }
 
@@ -55,4 +59,25 @@
 {
     NSLog(@"button pressed.");
 }
+
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView;
+{
+    FindWayFirstViewController *mainBar = [[FindWayFirstViewController alloc] init];
+    [self.tabBarController.selectedViewController presentModalViewController:mainBar animated:YES];
+    
+//    [self.view addSubview:mainBar.view];
+    
+    NSLog(@"ShowingloggedInUser");
+}
+
+
+- (IBAction)performLogin:(id)sender
+{
+//    [self.spinner startAnimating];
+    
+    FindWayAppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+    [appDelegate openSession];
+}
+
+
 @end

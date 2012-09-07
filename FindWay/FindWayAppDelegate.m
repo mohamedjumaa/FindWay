@@ -7,12 +7,25 @@
 //
 
 #import "FindWayAppDelegate.h"
+#import "FindWayMainViewController.h"
+
 
 @implementation FindWayAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.mainviewController = [[FindWayMainViewController alloc] init ];
     // Override point for customization after application launch.
+    // See if we have a valid token for the current state.
+    if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
+        // To-do, show logged in view
+        NSLog(@"openSession");
+        [self openSession];
+    } else {
+        // No, display the login page.
+        NSLog(@"Loggin!!!");
+//        [self showLoginView];
+    }
     return YES;
 }
 							
@@ -36,11 +49,73 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    // this means the user switched back to this app without completing
+    // a login in Safari/Facebook App
+    if (FBSession.activeSession.state == FBSessionStateCreatedOpening) {
+        [FBSession.activeSession close]; // so we close our session and start over
+    }
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)sessionStateChanged:(FBSession *)session
+                      state:(FBSessionState) state
+                      error:(NSError *)error
+{
+    switch (state) {
+        case FBSessionStateOpen: {
+            NSLog(@"FBSessionStateOpen!");
+        }
+            break;
+        case FBSessionStateClosed:
+        case FBSessionStateClosedLoginFailed:
+            // Once the user has logged in, we want them to
+            // be looking at the root view.
+            NSLog(@"FBSessionStateClosedLoginFailed!");
+            
+            [FBSession.activeSession closeAndClearTokenInformation];
+            
+            //[self showLoginView];
+            break;
+        default:
+            break;
+    }
+    
+    if (error) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                                  initWithTitle:@"Error"
+                                  message:error.localizedDescription
+                                  delegate:nil
+                                  cancelButtonTitle:@"OK"
+                                  otherButtonTitles:nil];
+        [alertView show];
+    }    
+}
+
+
+- (void)openSession
+{
+    [FBSession openActiveSessionWithPermissions:nil
+                                   allowLoginUI:YES
+                              completionHandler:
+     ^(FBSession *session,
+       FBSessionState state, NSError *error) {
+         [self sessionStateChanged:session state:state error:error];
+     }];
+}
+
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [FBSession.activeSession handleOpenURL:url];
 }
 
 @end
