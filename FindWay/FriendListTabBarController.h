@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface FriendListTabBarController : UIViewController <UITabBarDelegate>
+@interface FriendListTabBarController : UIViewController <UITabBarDelegate,FBFriendPickerDelegate>
+{
+    FBFriendPickerViewController *friendPickerController;
+}
+@property (strong, nonatomic) FBFriendPickerViewController *friendPickerController;
+
 
 @end
+

@@ -8,7 +8,7 @@
 
 #import "FindWayMainViewController.h"
 #import "FindWayAppDelegate.h"
-#import "FindWayFirstViewController.h"
+#import "FindWayMainTabBarController.h"
 
 @interface FindWayMainViewController () <FBLoginViewDelegate>
 
@@ -62,7 +62,7 @@
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView;
 {
-    FindWayFirstViewController *mainBar = [[FindWayFirstViewController alloc] init];
+    FindWayMainTabBarController *mainBar = [[FindWayMainTabBarController alloc] init];
     [self.tabBarController.selectedViewController presentModalViewController:mainBar animated:YES];
     
 //    [self.view addSubview:mainBar.view];

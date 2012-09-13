@@ -33,7 +33,6 @@
 		CEBD0A7715F9C7ED0053CFAF /* FindWayInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBD0A7615F9C7ED0053CFAF /* FindWayInvitationViewController.m */; };
 		CEBD0A7B15F9F8830053CFAF /* FindWayMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBD0A7A15F9F8830053CFAF /* FindWayMainTabBarController.m */; };
 		CEC0250F15F8B7D100A0F239 /* FriendListTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */; };
-		CEC0251A15F8C45600A0F239 /* FriendListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0251915F8C45500A0F239 /* FriendListTableViewController.m */; };
 		CECDF91D15ECFC0000DEF733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDF91C15ECFC0000DEF733 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,8 +85,6 @@
 		CEBD0A7A15F9F8830053CFAF /* FindWayMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMainTabBarController.m; sourceTree = "<group>"; };
 		CEC0250D15F8B7D100A0F239 /* FriendListTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTabBarController.h; sourceTree = "<group>"; };
 		CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTabBarController.m; sourceTree = "<group>"; };
-		CEC0251815F8C45500A0F239 /* FriendListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTableViewController.h; sourceTree = "<group>"; };
-		CEC0251915F8C45500A0F239 /* FriendListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTableViewController.m; sourceTree = "<group>"; };
 		CECDF91C15ECFC0000DEF733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -169,8 +166,6 @@
 				CE5E4C4315E4D0E80006353B /* first@2x.png */,
 				CEC0250D15F8B7D100A0F239 /* FriendListTabBarController.h */,
 				CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */,
-				CEC0251815F8C45500A0F239 /* FriendListTableViewController.h */,
-				CEC0251915F8C45500A0F239 /* FriendListTableViewController.m */,
 				CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */,
 				CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */,
 				CE8C4DA615EDBF580067A420 /* MessageTab.h */,
@@ -333,7 +328,6 @@
 				CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */,
 				CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */,
 				CEC0250F15F8B7D100A0F239 /* FriendListTabBarController.m in Sources */,
-				CEC0251A15F8C45600A0F239 /* FriendListTableViewController.m in Sources */,
 				CEBD0A7715F9C7ED0053CFAF /* FindWayInvitationViewController.m in Sources */,
 				CEBD0A7B15F9F8830053CFAF /* FindWayMainTabBarController.m in Sources */,
 			);
