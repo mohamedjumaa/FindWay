@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FindWayChatViewController : UIViewController
+@interface FindWayChatViewController : UIViewController <UINavigationControllerDelegate>
+@property (weak, nonatomic) IBOutlet UINavigationItem *Back;
 
 @end

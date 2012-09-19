@@ -28,6 +28,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    //imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    imagePicker.delegate = self;
+    imagePicker.allowsEditing = NO;
+    
 }
 
 - (void)viewDidUnload

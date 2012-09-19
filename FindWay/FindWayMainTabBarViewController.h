@@ -11,6 +11,9 @@
 #import "FindWayMainTabBarDelegate.h"
 
 @interface FindWayMainTabBarViewController : UITabBarController<FindWayMainTabBarDelegate>
-
+{
+    UINavigationController *navController;
+}
 @property (strong, nonatomic) FindWayMapViewController *mapViewController;
+@property (strong, nonatomic) UINavigationController *navController;
 @end

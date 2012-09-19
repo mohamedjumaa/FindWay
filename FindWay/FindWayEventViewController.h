@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FindWayEventViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface FindWayEventViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UINavigationBarDelegate>
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *Back;
 @property (strong, nonatomic)NSArray *controllers;
 @property (strong, nonatomic)NSArray *eventData;
-@property (strong, nonatomic) UINavigationController *navController;
+
+- (void)loginFailed;
 @end

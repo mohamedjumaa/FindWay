@@ -19,8 +19,9 @@
 
 @implementation FindWayEventViewController
 @synthesize eventData;
-@synthesize navController;
+@synthesize Back;
 @synthesize controllers;
+
 
 
 
@@ -29,6 +30,8 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+
+
 
     }
     return self;
@@ -42,23 +45,25 @@
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //self.navigationItem.title = @"Custom Nav";
+
 //    FindWayEventViewController *first = [[FindWayEventViewController alloc] initWithStyle:UITableViewStylePlain];
 //    self.navController = [[UINavigationController alloc]initWithRootViewController:first];
 //    [self.navController.view addSubview:navController.view];
+    self.title = @"請選擇收到的事件";
 
-    self.title = @"First";
     NSLog(@"FindWayEventViewController ViewDidLoad!");
 //    NSMutableArray *array = [[NSMutableArray alloc]init];
 //    self.controllers = array;
     
-    NSArray *array = [[NSArray alloc] initWithObjects:@"8/24 京站聚餐", @"8/26 週末淡水遊", nil];
+    NSArray *array = [[NSArray alloc] initWithObjects:@"8/24 京站聚餐", nil];
     self.eventData = array;
 
 }
 
 - (void)viewDidUnload
 {
+    [self setBack:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -173,9 +178,21 @@
     
     [mainTabBar setViewControllers:controllers];
     
-    [self presentModalViewController:mainTabBar animated:YES];
+    //[self presentModalViewController:mainTabBar animated:YES];
     
-    //[self.navController pushViewController:mainTabBar animated:YES];
+    mainTabBar.title = @"8/24 京站聚餐";
+    
+    [self.navigationController pushViewController:mainTabBar animated:YES];
 }
+
+- (void)loginFailed
+{
+    // User switched back to the app without authorizing. Stay here, but
+    // stop the spinner.
+    //[self.spinner stopAnimating];
+    NSLog(@"LoginFailed!!!!!!!");
+    
+}
+
 
 @end

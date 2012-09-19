@@ -13,17 +13,21 @@
 
 @implementation FindWayAppDelegate
 @synthesize window;
-@synthesize eventViewcontroller;
+@synthesize navController;
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //self.mainviewController = [[FindWayMainViewController alloc] init ];
+
     // Override point for customization after application launch.
     // See if we have a valid token for the current state.
-    //FindWayEventViewController *eventViewController = [[FindWayEventViewController alloc] initWithNibName:@"FindWayEventViewController" bundle:nil];
-    self.eventViewcontroller = [[FindWayEventViewController alloc]init];
-    [window addSubview:self.eventViewcontroller.view];
-
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    FindWayEventViewController *eventController = [[FindWayEventViewController alloc] init];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:eventController];
+    [self.window addSubview:navController.view];
+    
+    
     if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
         // To-do, show logged in view
         NSLog(@"openSession");
@@ -31,8 +35,9 @@
     } else {
         // No, display the login page.
         NSLog(@"Loggin!!!");
-//        [self showLoginView];
+        //[self showLoginView];
     }
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
@@ -123,6 +128,25 @@
          annotation:(id)annotation
 {
     return [FBSession.activeSession handleOpenURL:url];
+}
+
+
+- (void)showLoginView
+{
+    UIViewController *topViewController = [self.navController topViewController];
+    UIViewController *modalViewController = [topViewController modalViewController];
+    
+    // If the login screen is not already displayed, display it. If the login screen is
+    // displayed, then getting back here means the login in progress did not successfully
+    // complete. In that case, notify the login view so it can update its UI appropriately.
+    if (![modalViewController isKindOfClass:[FindWayEventViewController class]]) {
+        FindWayEventViewController *loginViewController = [[FindWayEventViewController alloc] init];
+        [topViewController presentModalViewController:loginViewController animated:NO];
+    } else {
+        FindWayEventViewController* loginViewController =
+        (FindWayEventViewController*)modalViewController;
+        [loginViewController loginFailed];
+    }
 }
 
 @end

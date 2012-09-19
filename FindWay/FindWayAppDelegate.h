@@ -13,8 +13,10 @@
 @interface FindWayAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *navController;
 @property (strong, nonatomic) FindWayMainViewController *mainviewController;
 @property (strong, nonatomic) FindWayEventViewController *eventViewcontroller;
+
 - (void)openSession;
 
 @end
