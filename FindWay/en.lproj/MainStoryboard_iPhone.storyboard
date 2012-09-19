@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jOQ-t5-AAD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="doF-3i-baV">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
-        <!--Find Way First View Controller - First-->
+        <!--Find Way Map View Controller - First-->
         <scene sceneID="11">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" userLabel="test1" sceneMemberID="firstResponder"/>
-                <viewController title="First" id="2" customClass="FindWayFirstViewController" sceneMemberID="viewController">
+                <viewController title="First" id="2" customClass="FindWayMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pBq-hq-ebd">
-                                <rect key="frame" x="118" y="283" width="85" height="37"/>
+                                <rect key="frame" x="179" y="288" width="85" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="直接使用">
@@ -84,7 +84,23 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="jOQ-t5-AAD" eventType="touchUpInside" id="wMX-RG-CQw"/>
-                                    <segue destination="4" kind="modal" id="eC2-9c-6Ka"/>
+                                    <segue destination="doF-3i-baV" kind="modal" id="gg2-rg-28P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AHD-Kq-kqD">
+                                <rect key="frame" x="57" y="288" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="登入"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="登入">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performLogin:" destination="jOQ-t5-AAD" eventType="touchUpInside" id="fXe-aq-VuA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,13 +108,45 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-762" y="-58"/>
+            <point key="canvasLocation" x="-1115" y="-58"/>
         </scene>
-        <!--Find Way Main Tab Bar Controller-->
+        <!--Find Way Event View Controller-->
+        <scene sceneID="ROE-Wu-cJZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEu-rx-C3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="doF-3i-baV" customClass="FindWayEventViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gx6-Py-vfV">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="nN3-j3-605" customClass="FindWayEventCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="4" kind="modal" id="HWO-wO-B59"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="doF-3i-baV" id="p9x-Yc-hsA"/>
+                            <outlet property="delegate" destination="doF-3i-baV" id="Wlm-m5-y1x"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-721" y="-58"/>
+        </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
-                <tabBarController id="4" customClass="FindWayMainTabBarController" sceneMemberID="viewController">
+                <tabBarController id="4" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -112,7 +160,6 @@
                         <segue destination="3JO-Yl-88P" kind="relationship" relationship="viewControllers" id="tZk-Ks-EFD"/>
                     </connections>
                 </tabBarController>
-                <navigationItem id="dfi-0d-XMy"/>
             </objects>
             <point key="canvasLocation" x="-344" y="-58"/>
         </scene>
@@ -213,35 +260,6 @@
             </objects>
             <point key="canvasLocation" x="100" y="-643"/>
         </scene>
-        <!--Find Way Invitation View Controller-->
-        <scene sceneID="37h-33-evX">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AH0-Nc-JVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="67d-gP-9s6" customClass="FindWayInvitationViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="T5U-xG-4bk">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="V8A-j4-OUg">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="67d-gP-9s6" id="ZDS-Ww-QXp"/>
-                            <outlet property="delegate" destination="67d-gP-9s6" id="pNq-VA-UB4"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="464" y="-643"/>
-        </scene>
         <!--Find WayFB Friend View Controller-->
         <scene sceneID="lDL-KO-shg">
             <objects>
@@ -277,24 +295,20 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
-        <class className="FindWayFirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWayFirstViewController.h"/>
+        <class className="FindWayEventCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWayEventCell.h"/>
         </class>
-        <class className="FindWayInvitationViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWayInvitationViewController.h"/>
-        </class>
-        <class className="FindWayMainTabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWayMainTabBarController.h"/>
+        <class className="FindWayEventViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWayEventViewController.h"/>
         </class>
         <class className="FindWayMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWayMainViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPressed:"/>
-                <relationship kind="action" name="performLogin:"/>
             </relationships>
         </class>
-        <class className="FindWaySecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWaySecondViewController.h"/>
+        <class className="FindWayMapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FindWayMapViewController.h"/>
         </class>
         <class className="FriendListTabBarController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FriendListTabBarController.h"/>

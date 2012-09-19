@@ -7,7 +7,7 @@
 //
 
 #import "FriendListTabBarController.h"
-#import "FindWayInvitationViewController.h"
+
 
 @interface FriendListTabBarController ()
 
@@ -101,8 +101,8 @@
     }
     if( [item.title isEqualToString:@"Invitation"])
     {
-        FindWayInvitationViewController *instance = [[FindWayInvitationViewController alloc] init];
-        [self.view addSubview:instance.view];
+        //FindWayInvitationViewController *instance = [[FindWayInvitationViewController alloc] init];
+        //[self.view addSubview:instance.view];
         
     }
     

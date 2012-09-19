@@ -8,7 +8,8 @@
 
 #import "FindWayMainViewController.h"
 #import "FindWayAppDelegate.h"
-#import "FindWayMainTabBarController.h"
+#import "FindWayMainTabBarViewController.h"
+#import "FindWayEventViewController.h"
 
 @interface FindWayMainViewController () <FBLoginViewDelegate>
 
@@ -16,12 +17,13 @@
 
 @implementation FindWayMainViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-    }
+            }
     return self;
 }
 
@@ -33,7 +35,7 @@
     FBLoginView *loginview =
     [[FBLoginView alloc] initWithPermissions:[NSArray arrayWithObject:@"publish_actions"]];
     
-    loginview.frame = CGRectOffset(loginview.frame, 5, 5);
+    loginview.frame = CGRectOffset(loginview.frame, 80, 220);
     loginview.delegate = self;
     
     [self.view addSubview:loginview];
@@ -58,11 +60,13 @@
 -(IBAction)buttonPressed:(id)sender
 {
     NSLog(@"button pressed.");
+//    FindWayEventViewController *mainBar = [[FindWayEventViewController alloc] initWithNibName:@"FindWayEventViewController" bundle:nil];
+//    [self.view addSubview:mainBar.view];
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView;
 {
-    FindWayMainTabBarController *mainBar = [[FindWayMainTabBarController alloc] init];
+    FindWayMainTabBarViewController *mainBar = [[FindWayMainTabBarViewController alloc] init];
     [self.tabBarController.selectedViewController presentModalViewController:mainBar animated:YES];
     
 //    [self.view addSubview:mainBar.view];

@@ -8,15 +8,22 @@
 
 #import "FindWayAppDelegate.h"
 #import "FindWayMainViewController.h"
+#import "FindWayEventViewController.h"
 
 
 @implementation FindWayAppDelegate
+@synthesize window;
+@synthesize eventViewcontroller;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.mainviewController = [[FindWayMainViewController alloc] init ];
+    //self.mainviewController = [[FindWayMainViewController alloc] init ];
     // Override point for customization after application launch.
     // See if we have a valid token for the current state.
+    //FindWayEventViewController *eventViewController = [[FindWayEventViewController alloc] initWithNibName:@"FindWayEventViewController" bundle:nil];
+    self.eventViewcontroller = [[FindWayEventViewController alloc]init];
+    [window addSubview:self.eventViewcontroller.view];
+
     if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
         // To-do, show logged in view
         NSLog(@"openSession");

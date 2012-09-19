@@ -15,10 +15,8 @@
 		CE5E4C3715E4D0E80006353B /* FindWayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */; };
 		CE5E4C3A15E4D0E80006353B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */; };
 		CE5E4C3D15E4D0E80006353B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */; };
-		CE5E4C4015E4D0E80006353B /* FindWayFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */; };
 		CE5E4C4215E4D0E80006353B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4115E4D0E80006353B /* first.png */; };
 		CE5E4C4415E4D0E80006353B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4315E4D0E80006353B /* first@2x.png */; };
-		CE5E4C4715E4D0E80006353B /* FindWaySecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C4615E4D0E80006353B /* FindWaySecondViewController.m */; };
 		CE5E4C4915E4D0E80006353B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4815E4D0E80006353B /* second.png */; };
 		CE5E4C4B15E4D0E80006353B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C4A15E4D0E80006353B /* second@2x.png */; };
 		CE5E4C5315E4D0E90006353B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C5215E4D0E90006353B /* SenTestingKit.framework */; };
@@ -26,14 +24,26 @@
 		CE5E4C5515E4D0E90006353B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5E4C2815E4D0E80006353B /* Foundation.framework */; };
 		CE5E4C5D15E4D0E90006353B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5E4C5B15E4D0E90006353B /* InfoPlist.strings */; };
 		CE5E4C6015E4D0E90006353B /* FindWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5E4C5F15E4D0E90006353B /* FindWayTests.m */; };
-		CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C4DA715EDBF580067A420 /* MessageTab.m */; };
 		CE8C505D15EF8E000067A420 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8C505C15EF8E000067A420 /* FacebookSDK.framework */; };
 		CE8C506015EF8E9E0067A420 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE8C505F15EF8E9E0067A420 /* FacebookSDKResources.bundle */; };
 		CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C506215EF914B0067A420 /* FindWayMainViewController.m */; };
-		CEBD0A7715F9C7ED0053CFAF /* FindWayInvitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBD0A7615F9C7ED0053CFAF /* FindWayInvitationViewController.m */; };
-		CEBD0A7B15F9F8830053CFAF /* FindWayMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBD0A7A15F9F8830053CFAF /* FindWayMainTabBarController.m */; };
 		CEC0250F15F8B7D100A0F239 /* FriendListTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */; };
 		CECDF91D15ECFC0000DEF733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDF91C15ECFC0000DEF733 /* MapKit.framework */; };
+		CEECEFE0160724170074E025 /* FindWayEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECEFDE160724170074E025 /* FindWayEventViewController.m */; };
+		CEECEFE1160724170074E025 /* FindWayEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECEFDF160724170074E025 /* FindWayEventViewController.xib */; };
+		CEECEFE3160732A10074E025 /* gathering.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEECEFE2160732A10074E025 /* gathering.jpg */; };
+		CEECEFE6160734EE0074E025 /* FindWayEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECEFE5160734EE0074E025 /* FindWayEventCell.m */; };
+		CEECEFF116082B560074E025 /* FindWayMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECEFF016082B550074E025 /* FindWayMainTabBarViewController.m */; };
+		CEECEFF316082B7A0074E025 /* FindWayMainTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECEFF216082B7A0074E025 /* FindWayMainTabBar.xib */; };
+		CEECEFFE160854560074E025 /* FindWayMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECEFFD160854550074E025 /* FindWayMapViewController.m */; };
+		CEECF000160858FD0074E025 /* FindWayMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECEFFF160858FD0074E025 /* FindWayMapView.xib */; };
+		CEECF00316085C2C0074E025 /* FindWayMainTabBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECF00216085C2C0074E025 /* FindWayMainTabBarDelegate.m */; };
+		CEECF007160961BC0074E025 /* FindWayPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECF005160961BB0074E025 /* FindWayPictureViewController.m */; };
+		CEECF008160961BC0074E025 /* FindWayPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECF006160961BB0074E025 /* FindWayPictureViewController.xib */; };
+		CEECF00C16096D280074E025 /* FindWayChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECF00A16096D270074E025 /* FindWayChatViewController.m */; };
+		CEECF00D16096D280074E025 /* FindWayChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECF00B16096D280074E025 /* FindWayChatViewController.xib */; };
+		CEECF011160971B40074E025 /* FindWayOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECF00F160971B20074E025 /* FindWayOptionViewController.m */; };
+		CEECF012160971B40074E025 /* FindWayOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECF010160971B30074E025 /* FindWayOptionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +69,8 @@
 		CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayAppDelegate.m; sourceTree = "<group>"; };
 		CE5E4C3915E4D0E80006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		CE5E4C3C15E4D0E80006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CE5E4C3E15E4D0E80006353B /* FindWayFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWayFirstViewController.h; sourceTree = "<group>"; };
-		CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayFirstViewController.m; sourceTree = "<group>"; };
 		CE5E4C4115E4D0E80006353B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		CE5E4C4315E4D0E80006353B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		CE5E4C4515E4D0E80006353B /* FindWaySecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWaySecondViewController.h; sourceTree = "<group>"; };
-		CE5E4C4615E4D0E80006353B /* FindWaySecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWaySecondViewController.m; sourceTree = "<group>"; };
 		CE5E4C4815E4D0E80006353B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		CE5E4C4A15E4D0E80006353B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		CE5E4C5115E4D0E90006353B /* FindWayTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWayTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,19 +79,36 @@
 		CE5E4C5C15E4D0E90006353B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE5E4C5E15E4D0E90006353B /* FindWayTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindWayTests.h; sourceTree = "<group>"; };
 		CE5E4C5F15E4D0E90006353B /* FindWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindWayTests.m; sourceTree = "<group>"; };
-		CE8C4DA615EDBF580067A420 /* MessageTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTab.h; sourceTree = "<group>"; };
-		CE8C4DA715EDBF580067A420 /* MessageTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTab.m; sourceTree = "<group>"; };
 		CE8C505C15EF8E000067A420 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		CE8C505F15EF8E9E0067A420 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		CE8C506115EF914B0067A420 /* FindWayMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayMainViewController.h; sourceTree = "<group>"; };
 		CE8C506215EF914B0067A420 /* FindWayMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMainViewController.m; sourceTree = "<group>"; };
-		CEBD0A7515F9C7ED0053CFAF /* FindWayInvitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayInvitationViewController.h; sourceTree = "<group>"; };
-		CEBD0A7615F9C7ED0053CFAF /* FindWayInvitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayInvitationViewController.m; sourceTree = "<group>"; };
-		CEBD0A7915F9F8830053CFAF /* FindWayMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayMainTabBarController.h; sourceTree = "<group>"; };
-		CEBD0A7A15F9F8830053CFAF /* FindWayMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMainTabBarController.m; sourceTree = "<group>"; };
 		CEC0250D15F8B7D100A0F239 /* FriendListTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTabBarController.h; sourceTree = "<group>"; };
 		CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTabBarController.m; sourceTree = "<group>"; };
 		CECDF91C15ECFC0000DEF733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEECEFDD160724170074E025 /* FindWayEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayEventViewController.h; sourceTree = "<group>"; };
+		CEECEFDE160724170074E025 /* FindWayEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayEventViewController.m; sourceTree = "<group>"; };
+		CEECEFDF160724170074E025 /* FindWayEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindWayEventViewController.xib; sourceTree = "<group>"; };
+		CEECEFE2160732A10074E025 /* gathering.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gathering.jpg; path = Res/gathering.jpg; sourceTree = SOURCE_ROOT; };
+		CEECEFE4160734EE0074E025 /* FindWayEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayEventCell.h; sourceTree = "<group>"; };
+		CEECEFE5160734EE0074E025 /* FindWayEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayEventCell.m; sourceTree = "<group>"; };
+		CEECEFEF16082B550074E025 /* FindWayMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayMainTabBarViewController.h; sourceTree = "<group>"; };
+		CEECEFF016082B550074E025 /* FindWayMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMainTabBarViewController.m; sourceTree = "<group>"; };
+		CEECEFF216082B7A0074E025 /* FindWayMainTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindWayMainTabBar.xib; sourceTree = "<group>"; };
+		CEECEFFC160854550074E025 /* FindWayMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayMapViewController.h; sourceTree = "<group>"; };
+		CEECEFFD160854550074E025 /* FindWayMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMapViewController.m; sourceTree = "<group>"; };
+		CEECEFFF160858FD0074E025 /* FindWayMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindWayMapView.xib; sourceTree = "<group>"; };
+		CEECF00116085C1F0074E025 /* FindWayMainTabBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayMainTabBarDelegate.h; sourceTree = "<group>"; };
+		CEECF00216085C2C0074E025 /* FindWayMainTabBarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayMainTabBarDelegate.m; sourceTree = "<group>"; };
+		CEECF004160961BA0074E025 /* FindWayPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayPictureViewController.h; sourceTree = "<group>"; };
+		CEECF005160961BB0074E025 /* FindWayPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayPictureViewController.m; sourceTree = "<group>"; };
+		CEECF006160961BB0074E025 /* FindWayPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindWayPictureViewController.xib; sourceTree = "<group>"; };
+		CEECF00916096D270074E025 /* FindWayChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayChatViewController.h; sourceTree = "<group>"; };
+		CEECF00A16096D270074E025 /* FindWayChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayChatViewController.m; sourceTree = "<group>"; };
+		CEECF00B16096D280074E025 /* FindWayChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindWayChatViewController.xib; sourceTree = "<group>"; };
+		CEECF00E160971B10074E025 /* FindWayOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayOptionViewController.h; sourceTree = "<group>"; };
+		CEECF00F160971B20074E025 /* FindWayOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayOptionViewController.m; sourceTree = "<group>"; };
+		CEECF010160971B30074E025 /* FindWayOptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindWayOptionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,24 +175,36 @@
 			children = (
 				CE5E4C3515E4D0E80006353B /* FindWayAppDelegate.h */,
 				CE5E4C3615E4D0E80006353B /* FindWayAppDelegate.m */,
-				CE5E4C3E15E4D0E80006353B /* FindWayFirstViewController.h */,
-				CE5E4C3F15E4D0E80006353B /* FindWayFirstViewController.m */,
-				CEBD0A7515F9C7ED0053CFAF /* FindWayInvitationViewController.h */,
-				CEBD0A7615F9C7ED0053CFAF /* FindWayInvitationViewController.m */,
-				CEBD0A7915F9F8830053CFAF /* FindWayMainTabBarController.h */,
-				CEBD0A7A15F9F8830053CFAF /* FindWayMainTabBarController.m */,
+				CEECF00916096D270074E025 /* FindWayChatViewController.h */,
+				CEECF00A16096D270074E025 /* FindWayChatViewController.m */,
+				CEECF00B16096D280074E025 /* FindWayChatViewController.xib */,
+				CEECEFE4160734EE0074E025 /* FindWayEventCell.h */,
+				CEECEFE5160734EE0074E025 /* FindWayEventCell.m */,
+				CEECEFDD160724170074E025 /* FindWayEventViewController.h */,
+				CEECEFDE160724170074E025 /* FindWayEventViewController.m */,
+				CEECF00E160971B10074E025 /* FindWayOptionViewController.h */,
+				CEECF00F160971B20074E025 /* FindWayOptionViewController.m */,
+				CEECF010160971B30074E025 /* FindWayOptionViewController.xib */,
+				CEECEFDF160724170074E025 /* FindWayEventViewController.xib */,
+				CEECEFF216082B7A0074E025 /* FindWayMainTabBar.xib */,
+				CEECF00116085C1F0074E025 /* FindWayMainTabBarDelegate.h */,
+				CEECF00216085C2C0074E025 /* FindWayMainTabBarDelegate.m */,
+				CEECEFEF16082B550074E025 /* FindWayMainTabBarViewController.h */,
+				CEECEFF016082B550074E025 /* FindWayMainTabBarViewController.m */,
 				CE8C506115EF914B0067A420 /* FindWayMainViewController.h */,
 				CE8C506215EF914B0067A420 /* FindWayMainViewController.m */,
-				CE5E4C4515E4D0E80006353B /* FindWaySecondViewController.h */,
-				CE5E4C4615E4D0E80006353B /* FindWaySecondViewController.m */,
+				CEECEFFF160858FD0074E025 /* FindWayMapView.xib */,
+				CEECEFFC160854550074E025 /* FindWayMapViewController.h */,
+				CEECEFFD160854550074E025 /* FindWayMapViewController.m */,
+				CEECF004160961BA0074E025 /* FindWayPictureViewController.h */,
+				CEECF005160961BB0074E025 /* FindWayPictureViewController.m */,
+				CEECF006160961BB0074E025 /* FindWayPictureViewController.xib */,
 				CE5E4C4115E4D0E80006353B /* first.png */,
 				CE5E4C4315E4D0E80006353B /* first@2x.png */,
 				CEC0250D15F8B7D100A0F239 /* FriendListTabBarController.h */,
 				CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */,
 				CE5E4C3B15E4D0E80006353B /* MainStoryboard_iPad.storyboard */,
 				CE5E4C3815E4D0E80006353B /* MainStoryboard_iPhone.storyboard */,
-				CE8C4DA615EDBF580067A420 /* MessageTab.h */,
-				CE8C4DA715EDBF580067A420 /* MessageTab.m */,
 				CE5E4C4815E4D0E80006353B /* second.png */,
 				CE5E4C4A15E4D0E80006353B /* second@2x.png */,
 				CE5E4C2D15E4D0E80006353B /* Supporting Files */,
@@ -180,6 +215,7 @@
 		CE5E4C2D15E4D0E80006353B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEECEFE2160732A10074E025 /* gathering.jpg */,
 				CE5E4C2E15E4D0E80006353B /* FindWay-Info.plist */,
 				CE5E4C2F15E4D0E80006353B /* InfoPlist.strings */,
 				CE5E4C3215E4D0E80006353B /* main.m */,
@@ -287,6 +323,13 @@
 				CE5E4C4915E4D0E80006353B /* second.png in Resources */,
 				CE5E4C4B15E4D0E80006353B /* second@2x.png in Resources */,
 				CE8C506015EF8E9E0067A420 /* FacebookSDKResources.bundle in Resources */,
+				CEECEFE1160724170074E025 /* FindWayEventViewController.xib in Resources */,
+				CEECEFE3160732A10074E025 /* gathering.jpg in Resources */,
+				CEECEFF316082B7A0074E025 /* FindWayMainTabBar.xib in Resources */,
+				CEECF000160858FD0074E025 /* FindWayMapView.xib in Resources */,
+				CEECF008160961BC0074E025 /* FindWayPictureViewController.xib in Resources */,
+				CEECF00D16096D280074E025 /* FindWayChatViewController.xib in Resources */,
+				CEECF012160971B40074E025 /* FindWayOptionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,13 +366,16 @@
 			files = (
 				CE5E4C3315E4D0E80006353B /* main.m in Sources */,
 				CE5E4C3715E4D0E80006353B /* FindWayAppDelegate.m in Sources */,
-				CE5E4C4015E4D0E80006353B /* FindWayFirstViewController.m in Sources */,
-				CE5E4C4715E4D0E80006353B /* FindWaySecondViewController.m in Sources */,
-				CE8C4DA815EDBF580067A420 /* MessageTab.m in Sources */,
 				CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */,
 				CEC0250F15F8B7D100A0F239 /* FriendListTabBarController.m in Sources */,
-				CEBD0A7715F9C7ED0053CFAF /* FindWayInvitationViewController.m in Sources */,
-				CEBD0A7B15F9F8830053CFAF /* FindWayMainTabBarController.m in Sources */,
+				CEECEFE0160724170074E025 /* FindWayEventViewController.m in Sources */,
+				CEECEFE6160734EE0074E025 /* FindWayEventCell.m in Sources */,
+				CEECEFF116082B560074E025 /* FindWayMainTabBarViewController.m in Sources */,
+				CEECEFFE160854560074E025 /* FindWayMapViewController.m in Sources */,
+				CEECF00316085C2C0074E025 /* FindWayMainTabBarDelegate.m in Sources */,
+				CEECF007160961BC0074E025 /* FindWayPictureViewController.m in Sources */,
+				CEECF00C16096D280074E025 /* FindWayChatViewController.m in Sources */,
+				CEECF011160971B40074E025 /* FindWayOptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
