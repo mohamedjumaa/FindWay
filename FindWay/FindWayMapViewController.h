@@ -10,7 +10,7 @@
 
 
 
-@interface FindWayMapViewController : UIViewController
+@interface FindWayMapViewController : UIViewController<UINavigationControllerDelegate>
 
 
 @end

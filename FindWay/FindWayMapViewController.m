@@ -7,6 +7,28 @@
 //
 
 #import "FindWayMapViewController.h"
+#import "FindWayEventViewController.h"
+#import "ToolBarHelper.h"
+
+//static ToolbarHelper *instance = nil;
+//
+//@implementation ToolbarHelper
+//@synthesize eventToolBar;
+//+ (ToolbarHelper *)newInstance{
+//    @synchronized(self) {
+//        if (instance == nil){
+//            instance = [[ToolbarHelper alloc]init];
+//            //[instance openDatabase];
+//        }
+//    }
+//    
+//    return instance;
+//    
+//}
+//
+//
+//@end
+
 
 @interface FindWayMapViewController ()
 
@@ -41,5 +63,19 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (void)navigationController:(UINavigationController *)navigationController
+      willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    NSLog(@"willShowViewController");
+    if ([viewController isKindOfClass:[FindWayEventViewController class]]) {
+//        ToolbarHelper *eventToolBar = [ToolbarHelper newInstance];
+//        [eventToolBar setHidden:FALSE];
+        
+        NSLog(@"back!!!!");
+    } else {
+        NSLog(@"forward");
+    }
+}
+
 
 @end

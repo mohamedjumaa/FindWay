@@ -34,7 +34,7 @@
     //self.navController = [[UINavigationController alloc] init];
     //[self.navController.view addSubview:navController.view];
     self.navigationItem.title = @"one";
-
+    
 	// Do any additional setup after loading the view.
     
 //    [self.view addSubview:mainTabBer.view];
