@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FindWayPictureViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface FindWayPictureViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITabBarControllerDelegate>
 
 @end

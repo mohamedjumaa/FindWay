@@ -8,6 +8,7 @@
 
 #import "FindWayInvitationViewController.h"
 #import "FindWayInvitationMapViewController.h"
+#import "FindWayEventViewController.h"
 
 @interface FindWayInvitationViewController ()
 
@@ -55,6 +56,7 @@
     NSLog(@"ToStep2!");
     FindWayInvitationMapViewController *step2 = [[FindWayInvitationMapViewController alloc] initWithNibName:@"FindWayInvitationMapViewController" bundle:nil];
     //[self.view addSubview:step2.view ];
+    //[self.navigationController pushViewController:step2 animated:YES];
     [self.navigationController pushViewController:step2 animated:YES];
      
 }
@@ -63,5 +65,17 @@
 {
     [sender resignFirstResponder];
 }
+
+
+
+- (IBAction) back_clicked:(id)sender {
+    NSLog(@"back_clicked!");
+    //[self.navigationController popViewController:invitation];
+    [self dismissModalViewControllerAnimated:YES];
+    //[invitation removeFromSuperview];
+    //[self.navigationController dismissModalViewController:invitation];
+    
+}
+
 
 @end

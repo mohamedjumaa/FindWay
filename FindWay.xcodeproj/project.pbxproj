@@ -34,6 +34,14 @@
 		CE8C506315EF914C0067A420 /* FindWayMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C506215EF914B0067A420 /* FindWayMainViewController.m */; };
 		CE8DC6EF160ACCE900FE768F /* IMG_0972.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CE8DC6EE160ACCE900FE768F /* IMG_0972.JPG */; };
 		CEC0250F15F8B7D100A0F239 /* FriendListTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */; };
+		CEC4A3F2160B29BB000AB00B /* 180-stickynote.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A3F1160B29BB000AB00B /* 180-stickynote.png */; };
+		CEC4A3F5160B2C4B000AB00B /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A3F4160B2C4B000AB00B /* 103-map.png */; };
+		CEC4A3F7160B2D16000AB00B /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A3F6160B2D16000AB00B /* 09-chat-2.png */; };
+		CEC4A3F9160B2D42000AB00B /* 86-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A3F8160B2D42000AB00B /* 86-camera.png */; };
+		CEC4A3FB160B2D91000AB00B /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A3FA160B2D91000AB00B /* 19-gear.png */; };
+		CEC4A401160BF877000AB00B /* 56-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A400160BF877000AB00B /* 56-cloud.png */; };
+		CEC4A403160BF900000AB00B /* coolpc-printershare.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A402160BF900000AB00B /* coolpc-printershare.png */; };
+		CEC4A405160BFCD4000AB00B /* 下載.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC4A404160BFCD4000AB00B /* 下載.jpg */; };
 		CECDF91D15ECFC0000DEF733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECDF91C15ECFC0000DEF733 /* MapKit.framework */; };
 		CEECEFE0160724170074E025 /* FindWayEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECEFDE160724170074E025 /* FindWayEventViewController.m */; };
 		CEECEFE1160724170074E025 /* FindWayEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEECEFDF160724170074E025 /* FindWayEventViewController.xib */; };
@@ -100,6 +108,14 @@
 		CE8DC6EE160ACCE900FE768F /* IMG_0972.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0972.JPG; path = Res/IMG_0972.JPG; sourceTree = SOURCE_ROOT; };
 		CEC0250D15F8B7D100A0F239 /* FriendListTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTabBarController.h; sourceTree = "<group>"; };
 		CEC0250E15F8B7D100A0F239 /* FriendListTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTabBarController.m; sourceTree = "<group>"; };
+		CEC4A3F1160B29BB000AB00B /* 180-stickynote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180-stickynote.png"; sourceTree = "<group>"; };
+		CEC4A3F4160B2C4B000AB00B /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "103-map.png"; sourceTree = "<group>"; };
+		CEC4A3F6160B2D16000AB00B /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
+		CEC4A3F8160B2D42000AB00B /* 86-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "86-camera.png"; sourceTree = "<group>"; };
+		CEC4A3FA160B2D91000AB00B /* 19-gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "19-gear.png"; sourceTree = "<group>"; };
+		CEC4A400160BF877000AB00B /* 56-cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "56-cloud.png"; sourceTree = "<group>"; };
+		CEC4A402160BF900000AB00B /* coolpc-printershare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coolpc-printershare.png"; sourceTree = "<group>"; };
+		CEC4A404160BFCD4000AB00B /* 下載.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "下載.jpg"; sourceTree = "<group>"; };
 		CECDF91C15ECFC0000DEF733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEECEFDD160724170074E025 /* FindWayEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindWayEventViewController.h; sourceTree = "<group>"; };
 		CEECEFDE160724170074E025 /* FindWayEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindWayEventViewController.m; sourceTree = "<group>"; };
@@ -238,6 +254,14 @@
 		CE5E4C2D15E4D0E80006353B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEC4A404160BFCD4000AB00B /* 下載.jpg */,
+				CEC4A402160BF900000AB00B /* coolpc-printershare.png */,
+				CEC4A400160BF877000AB00B /* 56-cloud.png */,
+				CEC4A3FA160B2D91000AB00B /* 19-gear.png */,
+				CEC4A3F8160B2D42000AB00B /* 86-camera.png */,
+				CEC4A3F6160B2D16000AB00B /* 09-chat-2.png */,
+				CEC4A3F4160B2C4B000AB00B /* 103-map.png */,
+				CEC4A3F1160B29BB000AB00B /* 180-stickynote.png */,
 				CE8DC6EE160ACCE900FE768F /* IMG_0972.JPG */,
 				CEECEFE2160732A10074E025 /* gathering.jpg */,
 				CE5E4C2E15E4D0E80006353B /* FindWay-Info.plist */,
@@ -357,6 +381,14 @@
 				CE5140D81609F30B00F350E6 /* FindWayInvitationViewController.xib in Resources */,
 				CE5140DD1609F86200F350E6 /* FindWayInvitationMapViewController.xib in Resources */,
 				CE8DC6EF160ACCE900FE768F /* IMG_0972.JPG in Resources */,
+				CEC4A3F2160B29BB000AB00B /* 180-stickynote.png in Resources */,
+				CEC4A3F5160B2C4B000AB00B /* 103-map.png in Resources */,
+				CEC4A3F7160B2D16000AB00B /* 09-chat-2.png in Resources */,
+				CEC4A3F9160B2D42000AB00B /* 86-camera.png in Resources */,
+				CEC4A3FB160B2D91000AB00B /* 19-gear.png in Resources */,
+				CEC4A401160BF877000AB00B /* 56-cloud.png in Resources */,
+				CEC4A403160BF900000AB00B /* coolpc-printershare.png in Resources */,
+				CEC4A405160BFCD4000AB00B /* 下載.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

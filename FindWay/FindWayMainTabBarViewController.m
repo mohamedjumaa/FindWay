@@ -31,9 +31,12 @@
 {
     [super viewDidLoad];
     NSLog(@"MainTabber in!!");
+    NSLog(@"selectedIndex : %u",self.tabBarController.selectedIndex);
     //self.navController = [[UINavigationController alloc] init];
     //[self.navController.view addSubview:navController.view];
     self.navigationItem.title = @"one";
+    
+
     
 	// Do any additional setup after loading the view.
     
@@ -54,5 +57,7 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+
 
 @end

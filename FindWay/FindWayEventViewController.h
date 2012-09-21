@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FindWayEventViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UINavigationBarDelegate>
+@interface FindWayEventViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UINavigationBarDelegate, UITabBarControllerDelegate>
 {
     UIToolbar *toolBar;
     

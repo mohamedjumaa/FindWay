@@ -13,4 +13,5 @@
 
 -(IBAction)textFieldDoneEditing:(id)sender;
 - (IBAction)ToStep2:(id)sender;
+-(IBAction)back_clicked:(id)sender;
 @end

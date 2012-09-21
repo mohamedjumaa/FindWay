@@ -224,10 +224,16 @@ static ToolbarHelper *instance = nil;
     //FindWayMainTabBarViewController *mainTabBar = [[FindWayMainTabBarViewController alloc]initWithNibName:@"FindWayMainTabBar" bundle:nil];
     
     FindWayMapViewController *controller1 =[[FindWayMapViewController alloc] initWithNibName:@"FindWayMapView" bundle:nil];
-    FindWayChatViewController  *controller2 =[[FindWayChatViewController alloc] initWithNibName:@"FindWayChatViewController" bundle:nil];
-    FindWayPictureViewController *controller3 =[[FindWayPictureViewController alloc] initWithNibName:@"FindWayPictureViewController" bundle:nil];
-    FindWayOptionViewController *controller4 =[[FindWayOptionViewController alloc] initWithNibName:@"FindWayOptionViewController" bundle:nil];
     
+    controller1.tabBarItem.image = [UIImage imageNamed:@"103-map.png"];
+
+    FindWayChatViewController  *controller2 =[[FindWayChatViewController alloc] initWithNibName:@"FindWayChatViewController" bundle:nil];
+    controller2.tabBarItem.image = [UIImage imageNamed:@"09-chat-2.png"];
+    FindWayPictureViewController *controller3 =[[FindWayPictureViewController alloc] initWithNibName:@"FindWayPictureViewController" bundle:nil];
+    controller3.tabBarItem.image = [UIImage imageNamed:@"86-camera.png"];
+    FindWayOptionViewController *controller4 =[[FindWayOptionViewController alloc] initWithNibName:@"FindWayOptionViewController" bundle:nil];
+    controller4.tabBarItem.image = [UIImage imageNamed:@"19-gear.png"];
+    mainTabBar.delegate = self; 
     
     NSArray *tabControllers = [NSArray arrayWithObjects:controller1, controller2, controller3, controller4, nil];
     
@@ -239,6 +245,7 @@ static ToolbarHelper *instance = nil;
     [eventToolBar setHidden:TRUE];
 
     [self.navigationController pushViewController:mainTabBar animated:YES];
+    
 }
 
 - (void)loginFailed
@@ -259,5 +266,7 @@ static ToolbarHelper *instance = nil;
     [self presentModalViewController:createInvitation animated:YES];
     
 }
+
+
 
 @end
